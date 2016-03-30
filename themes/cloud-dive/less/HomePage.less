@@ -7,19 +7,40 @@
     padding: 35px;
     text-align: center;
     border: 1px solid lightgray;
+
+    .service_holder_overlay {
+      background: red;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      left: 0;
+      height: 100%;
+      display: none;
+    }
   }
 
   .contact {
-    background: #2980B9;
-    text-align: center;
+    background: @dark_blue;
+    //text-align: center;
     color: white;
     padding: 25px;
 
-    input {
+    h2,
+    h3 {
+      margin-top: 0px;
+    }
+
+    label {
+      margin: 15px 0px;
+    }
+
+    input,
+    textarea {
       color: black;
       border-radius: 5px;
       width: 80%;
       padding: 10px;
+      border: 0px;
     }
 
     input.action {

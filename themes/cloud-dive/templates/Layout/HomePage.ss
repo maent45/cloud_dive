@@ -4,12 +4,15 @@ $Content
 <% loop $Services %>
     <!-- loop all children of services -->
     <% loop $Children.Limit($Homepage_display_limit) %>
-        <div class="col-lg-4 service_holder">
+        <div class="col-lg-4 service_holder" id="$ID">
             <div class="col-lg-12">
                 <h2>$Title</h2>
             </div>
             <div class="col-lg-12">
                 <a href="$Link">$Title</a>
+            </div>
+            <div class="col-lg-12 service_holder_overlay" id="$ID">
+
             </div>
         </div>
     <% end_loop %>
@@ -18,14 +21,13 @@ $Content
 
 <!-- render contact form -->
 <div class="col-lg-12 contact">
-    <div class="col-lg-6">
-
-    </div>
-    <div class="col-lg-6">
-        <% with $showForm %>
+    <% with $showForm %>
+        <div class="col-lg-6">
             $Content
+        </div>
+        <div class="col-lg-6">
             $Form
-        <% end_with %>
-    </div>
+        </div>
+    <% end_with %>
 </div>
 
