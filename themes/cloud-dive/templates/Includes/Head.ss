@@ -20,6 +20,9 @@
     <% require themedCSS('main') %>
     <% require themedCSS('HomePage') %>
 
+    <!-- fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+
     <%--<link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />--%>
 </head>
 <body class="$ClassName">

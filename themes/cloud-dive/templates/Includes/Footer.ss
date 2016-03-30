@@ -1,3 +1,3 @@
-<div class="col-lg-12">
+<footer class="col-lg-12">
     <h2>Footer section</h2>
-</div>
+</footer>
