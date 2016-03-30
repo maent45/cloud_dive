@@ -1,6 +1,6 @@
 <% include Head %>
 
-$Layout
+    $Layout
 
 <% include Footer %>
 

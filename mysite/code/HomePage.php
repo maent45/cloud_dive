@@ -2,6 +2,23 @@
 
 class HomePage extends Page {
 
+    private static $has_many = array (
+        'Banners' => 'Banner'
+    );
+
+    public function getCMSFields() {
+        $fields = parent::getCMSFields();
+
+        $fields->addFieldToTab('Root.Banners', GridField::create(
+            'Banners',
+            'Banners',
+            $this->Banners(),
+            GridFieldConfig_RecordEditor::create()
+        ));
+
+        return $fields;
+    }
+
     // get ServicesHolder contents
     public function Services() {
         return ServicesHolder::get();

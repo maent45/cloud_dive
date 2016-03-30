@@ -14,7 +14,8 @@ module.exports = function(grunt) {
                 },
                 files: {
                     "themes/cloud-dive/css/main.css": "themes/cloud-dive/less/main.less",
-                    "themes/cloud-dive/css/test.css": "themes/cloud-dive/less/test.less" // destination file and source file
+                    "themes/cloud-dive/css/test.css": "themes/cloud-dive/less/test.less",
+                    "themes/cloud-dive/css/HomePage.css": "themes/cloud-dive/less/HomePage.less" // destination file and source file
                 }
             }
         },

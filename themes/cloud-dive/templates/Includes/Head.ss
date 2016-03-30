@@ -17,8 +17,8 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <% require themedCSS('bootstrap.min') %>
-
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <% require themedCSS('main') %>
+    <% require themedCSS('HomePage') %>
 
     <%--<link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />--%>
 </head>
