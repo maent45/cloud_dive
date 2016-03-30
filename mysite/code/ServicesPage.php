@@ -1,6 +1,6 @@
 <?php
 
-class PortfolioPage extends Page {
+class ServicesPage extends Page {
 
     private static $db = array (
         'Content' => 'HTMLText'
@@ -8,16 +8,18 @@ class PortfolioPage extends Page {
 
     private static $can_be_root = false;
 
-    public function getCMSFields() {
+    public function getmCMSFields() {
+
         $fields = parent::getCMSFields();
 
         $fields->addFieldToTab('Root.Main', HtmlEditorField::create('Content'));
 
         return $fields;
+
     }
 
 }
 
-class PortfolioPage_Controller extends Page_Controller {
+class ServicesPage_Controller extends Page_Controller {
 
 }
