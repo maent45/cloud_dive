@@ -7,13 +7,13 @@ body {
   margin-bottom: 0;
   border-radius: 0px;
   padding: 20px;
-  background: white;
+  background: @dark_blue;
   border: 0px;
+}
 
-  .navbar-default .navbar-nav>li>a {
-    color: white;
-  }
-
+.navbar-default .navbar-nav>li>a {
+  color: white;
+  font-weight: 600;
 }
 
 // footer
@@ -21,6 +21,21 @@ footer {
   background: #2C3E50;
   padding: 25px;
   color: white;
+
+  ul {
+    list-style-type: none;
+    padding: 0px;
+
+    a {
+      color: white;
+
+      &:hover {
+        color: @maroon;
+        text-decoration: none;
+      }
+    }
+  }
+
 }
 
 // tags
@@ -28,8 +43,8 @@ h1 {
   color: #E74C3C;
 }
 
-
 // colors
+@heavy_white: #f1f1f1;
 @dark_gray: #2C3E50;
 @maroon: #E74C3C;
 @light_blue: #3498DB;
