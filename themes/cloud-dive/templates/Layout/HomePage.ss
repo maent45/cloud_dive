@@ -1,16 +1,22 @@
-<div class="col-lg-12">
+<div class="col-lg-12 banner">
+    <div class="col-lg-6 banner_left">
+        $Banner_caption
+        <a href="#contact">
+            <button>
+                CONTACT US
+            </button>
+        </a>
+    </div>
     <% loop $Banners %>
-        <div class="col-lg-6">
-            $Content
-        </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 banner_right">
             $Image
         </div>
     <% end_loop %>
 </div>
 
-
-$Content
+<div class="col-lg-12 content">
+    $Content
+</div>
 
 <!-- loop all services -->
 <% loop $Services %>
@@ -31,7 +37,7 @@ $Content
 <% end_loop %>
 
 <!-- render contact form -->
-<div class="col-lg-12 contact">
+<div class="col-lg-12 contact" id="contact">
     <% with $showForm %>
         <div class="col-lg-6">
             $Content

@@ -2,6 +2,10 @@
 
 class HomePage extends Page {
 
+    private static $db = array (
+        'Banner_caption' => 'HTMLText'
+    );
+
     private static $has_many = array (
         'Banners' => 'Banner'
     );
@@ -9,6 +13,7 @@ class HomePage extends Page {
     public function getCMSFields() {
         $fields = parent::getCMSFields();
 
+        $fields->addFieldToTab('Root.Banners', HtmlEditorField::create('Banner_caption', 'Banner Caption'));
         $fields->addFieldToTab('Root.Banners', GridField::create(
             'Banners',
             'Banners',
