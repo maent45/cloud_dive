@@ -8,6 +8,9 @@
             <img src="$Thumbnail_background.URL" id="$ID">
             <div class="col-lg-12 portfolio_holder_content">
                 <h2>$Title</h2>
+                <div class="desc" id="$ID">
+                    $Content
+                </div>
             </div>
         </div>
     </a>

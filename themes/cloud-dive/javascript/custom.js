@@ -27,22 +27,30 @@ $(document).ready(function () {
     // portfolio holder
     $('div.portfolio_holder').each(function() {
         var current_holder = $(this);
+        var holder_img = $('img');
+        var desc = $('div.desc');
 
         $(current_holder).on('mouseover', function() {
-            var holder_img = $('img');
-
             $(holder_img).each(function() {
                 if ($(this).attr('id') == current_holder.attr('id')) {
                     $(this).stop().animate({'width':'105%'});
                 }
             });
+            $(desc).each(function() {
+                if ($(this).attr('id') == current_holder.attr('id')) {
+                    $(this).stop().fadeIn();
+                }
+            });
         });
         $(current_holder).on('mouseout', function() {
-            var holder_img = $('img');
-
             $(holder_img).each(function() {
                 if ($(this).attr('id') == current_holder.attr('id')) {
                     $(this).stop().animate({'width':'100%'});
+                }
+            });
+            $(desc).each(function() {
+                if ($(this).attr('id') == current_holder.attr('id')) {
+                    $(this).stop().fadeOut();
                 }
             });
         });
