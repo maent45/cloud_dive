@@ -1,3 +1,15 @@
+<div class="col-lg-12">
+    <% loop $Banners %>
+        <div class="col-lg-6">
+            $Content
+        </div>
+        <div class="col-lg-6">
+            $Image
+        </div>
+    <% end_loop %>
+</div>
+
+
 $Content
 
 <!-- loop all services -->
