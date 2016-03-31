@@ -1,4 +1,4 @@
-<footer class="col-lg-12">
+<footer class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <div class="container">
         <div class="col-lg-4">
             <h4>We are a digitally-led creative agency</h4>
