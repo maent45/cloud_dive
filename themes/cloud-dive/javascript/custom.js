@@ -25,34 +25,19 @@ $(document).ready(function () {
     });
 
     // portfolio holder
-    $('div.portfolio_holder').each(function() {
-        var current_holder = $(this);
-        var holder_img = $('img');
-        var desc = $('div.desc');
-
-        $(current_holder).on('mouseover', function() {
-            $(holder_img).each(function() {
-                if ($(this).attr('id') == current_holder.attr('id')) {
-                    $(this).stop().animate({'width':'105%'});
-                }
-            });
-            $(desc).each(function() {
-                if ($(this).attr('id') == current_holder.attr('id')) {
-                    $(this).stop().fadeIn();
-                }
-            });
+    $('div.portfolio_holder').on('mouseover', function() {
+        $(this).find('div.portfolio_holder_overlay').stop().fadeOut();
+        $(this).find('button').stop().fadeIn();
+        $(this).find('div.desc').show();
+        $(this).find('div.desc').stop().animate({
+            'bottom':'5px'
         });
-        $(current_holder).on('mouseout', function() {
-            $(holder_img).each(function() {
-                if ($(this).attr('id') == current_holder.attr('id')) {
-                    $(this).stop().animate({'width':'100%'});
-                }
-            });
-            $(desc).each(function() {
-                if ($(this).attr('id') == current_holder.attr('id')) {
-                    $(this).stop().fadeOut();
-                }
-            });
+    });
+    $('div.portfolio_holder').on('mouseout', function() {
+        $(this).find('div.portfolio_holder_overlay').stop().fadeIn();
+        $(this).find('button').stop().fadeOut();
+        $(this).find('div.desc').stop().animate({
+            'bottom':'-10px'
         });
     });
 
