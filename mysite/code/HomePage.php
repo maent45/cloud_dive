@@ -3,7 +3,8 @@
 class HomePage extends Page {
 
     private static $db = array (
-        'Banner_caption' => 'HTMLText'
+        'Banner_caption' => 'HTMLText',
+        'Services_display_limit' => 'Varchar'
     );
 
     private static $has_many = array (
@@ -13,6 +14,7 @@ class HomePage extends Page {
     public function getCMSFields() {
         $fields = parent::getCMSFields();
 
+        $fields->addFieldToTab('Root.Main', TextField::create('Services_display_limit', 'Services Display Limit'));
         $fields->addFieldToTab('Root.Banners', HtmlEditorField::create('Banner_caption', 'Banner Caption'));
         $fields->addFieldToTab('Root.Banners', GridField::create(
             'Banners',

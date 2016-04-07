@@ -20,6 +20,7 @@
     <% require themedCSS('main') %>
     <% require themedCSS('HomePage') %>
     <% require themedCSS('portfolio') %>
+    <% require themedCSS('services') %>
     <!-- fonts -->
     <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
 

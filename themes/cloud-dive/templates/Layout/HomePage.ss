@@ -21,7 +21,7 @@
 <!-- loop all services -->
 <% loop $Services %>
     <!-- loop all children of services -->
-    <% loop $Children.Limit($Homepage_display_limit) %>
+    <% loop $Children.Limit($Services_display_limit) %>
         <a href="$Link">
             <div class="col-lg-4 service_holder" id="$ID">
                 <div class="col-lg-12">
