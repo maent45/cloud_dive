@@ -30,9 +30,15 @@
                         <span class="glyphicon glyphicon-$Glyphicon"></span>
                     <% end_if %>
                     <h2>$Title</h2>
+                    $Services_offered
                 </div>
                 <div class="col-lg-12 service_holder_overlay" id="$ID">
-                    $Content
+                    $Blurb
+                    <br/>
+                    <button>
+                        <span>READ MORE</span>
+                        <div class="btn_bground"></div>
+                    </button>
                 </div>
             </div>
         </a>

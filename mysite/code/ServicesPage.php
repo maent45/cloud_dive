@@ -5,7 +5,8 @@ class ServicesPage extends Page {
     private static $db = array (
         'Content' => 'HTMLText',
         'Glyphicon' => 'Varchar',
-        'Blurb' => 'Text'
+        'Services_offered' => 'HTMLText',
+        'Blurb' => 'HTMLText'
     );
 
     private static $has_one = array (
@@ -19,8 +20,9 @@ class ServicesPage extends Page {
         $fields = parent::getCMSFields();
 
         $fields->addFieldToTab('Root.Main', TextField::create('Glyphicon'), 'Content');
+        $fields->addFieldToTab('Root.Main', HtmlEditorField::create('Services_offered', 'Services Included')->setRows(4), 'Content');
         $fields->addFieldToTab('Root.Main', $service_banner = UploadField::create('Banner'), 'Content');
-        $fields->addFieldToTab('Root.Main', TextareaField::create('Blurb'), 'Content');
+        $fields->addFieldToTab('Root.Main', HtmlEditorField::create('Blurb')->setRows(4), 'Content');
         $fields->addFieldToTab('Root.Main', HtmlEditorField::create('Content'));
 
         // set upload folder for images and files
