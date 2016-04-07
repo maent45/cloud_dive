@@ -2,6 +2,11 @@
     <div class="container banner_content">
         <h1>$Title</h1>
         <p>$Blurb</p>
+        <a href="contact-us">
+            <button>
+                CONTACT US NOW
+            </button>
+        </a>
     </div>
     <div class="img_filter"></div>
     <img src="$Banner.URL"/>

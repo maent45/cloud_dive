@@ -42,11 +42,17 @@ footer {
 h1 {
   color: #E74C3C;
 }
+button {
+  padding: 10px 50px;
+  border: 2px solid #E74C3C;
+  background: transparent;
+  margin: 15px 0px;
+}
 
 // icons
 span.glyphicon {
   font-size: 25px;
-  color: darkgray;
+  color: @dark_blue;
 }
 
 // colors
@@ -55,3 +61,30 @@ span.glyphicon {
 @maroon: #E74C3C;
 @light_blue: #3498DB;
 @dark_blue: #2980B9;
+
+.UserDefinedForm {
+
+  // forms
+  form {
+    background: @maroon;
+    padding: 20px;
+
+    label {
+      margin: 15px 0px;
+    }
+
+    input,
+    textarea {
+      color: black;
+      border-radius: 5px;
+      width: 100%;
+      padding: 10px;
+      border: 0px;
+    }
+
+    input.action {
+      margin-top: 20px;
+    }
+  }
+
+}
