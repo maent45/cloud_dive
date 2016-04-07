@@ -25,6 +25,9 @@
         <a href="$Link">
             <div class="col-lg-4 service_holder" id="$ID">
                 <div class="col-lg-12">
+                    <% if $Glyphicon %>
+                        <span class="glyphicon glyphicon-$Glyphicon"></span>
+                    <% end_if %>
                     <h2>$Title</h2>
                 </div>
                 <div class="col-lg-12 service_holder_overlay" id="$ID">

@@ -4,6 +4,9 @@
 <% loop $Children %>
     <a href="$Link">
         <div class="col-lg-4 ServicesHolder_infoholder" id="$ID">
+            <% if $Glyphicon %>
+                <span class="glyphicon glyphicon-$Glyphicon"></span>
+            <% end_if %>
             <h2>$Title</h2>
         </div>
     </a>

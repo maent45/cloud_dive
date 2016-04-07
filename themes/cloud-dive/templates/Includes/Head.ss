@@ -23,7 +23,10 @@
     <% require themedCSS('services') %>
     <!-- fonts -->
     <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
-
+    <link href="$ThemeDir/fonts/glyphicons-halflings-regular.woff">
+    <link href="$ThemeDir/fonts/glyphicons-halflings-regular.woff2">
+    <link href="$ThemeDir/fonts/glyphicons-halflings-regular.ttf">
+    <link href="$ThemeDir/fonts/glyphicons-halflings-regular.eot">
     <%--<link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />--%>
 </head>
 <body class="$ClassName">
