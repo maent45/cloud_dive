@@ -3,7 +3,8 @@
 class PortfolioPage extends Page {
 
     private static $db = array (
-        'Content' => 'HTMLText'
+        'Content' => 'HTMLText',
+        'Blurb' => 'HTMLText'
     );
 
     private static $has_one = array (
@@ -16,6 +17,7 @@ class PortfolioPage extends Page {
         $fields = parent::getCMSFields();
 
         $fields->addFieldToTab('Root.Main', $thumbnail_bkground = UploadField::create('Thumbnail_background', 'Thumbnail Background'));
+        $fields->addFieldToTab('Root.Main', $blurb = HtmlEditorField::create('Blurb')->setRows(4));
         $fields->addFieldToTab('Root.Main', HtmlEditorField::create('Content'));
 
         // set upload folder for images and files
@@ -30,5 +32,15 @@ class PortfolioPage extends Page {
 }
 
 class PortfolioPage_Controller extends Page_Controller {
+
+    public function NextSibling() {
+        $pages = DataObject::get("SiteTree", "ParentID = {$this->ParentID} AND Sort > {$this->Sort}", "Sort", "", 1);
+        if($pages) return $pages->First();
+    }
+
+    public function PreviousSibling() {
+        $pages = DataObject::get("SiteTree", "ParentID = {$this->ParentID} AND Sort < {$this->Sort}", "Sort DESC", "", 1);
+        if($pages) return $pages->First();
+    }
 
 }

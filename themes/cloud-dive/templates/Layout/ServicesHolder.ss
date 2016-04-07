@@ -28,6 +28,7 @@
             <h2>$Title</h2>
             <button>
                 <span>READ MORE</span>
+                <div class="btn_bground"></div>
             </button>
         </div>
     </a>
