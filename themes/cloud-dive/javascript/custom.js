@@ -56,6 +56,18 @@ $(document).ready(function () {
         });
     });
 
+    // services holder
+    // toggle overlay
+    $('a.services_wrapper').on('mouseover', function() {
+        $(this).find('button, .infoholder_overlay').stop().fadeIn();
+        $(this).find('span, .ServicesHolder_infoholder').css('color','white');
+    });
+    $('a.services_wrapper').on('mouseout', function() {
+        $(this).find('button, .infoholder_overlay').stop().fadeOut();
+        $(this).find('span').css('color','#3498DB');
+        $(this).find('.ServicesHolder_infoholder').css('color','#555');
+    });
+
     // button overlay toggle
     $('button').on('mouseover', function () {
         $(this).find('div.btn_bground').stop().slideDown(400);

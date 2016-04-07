@@ -10,14 +10,34 @@
     border: 1px solid lightgray;
     min-height: 250px;
     height: auto;
-    color: #333;
+    color: #555;
+    position: relative;
 
     a {
       text-decoration: none;
     }
 
+    span {
+      color: @light_blue;
+    }
+
     h2 {
-      color: #555;
+      position: relative;
+      z-index: 2;
+    }
+
+    button {
+      display: none;
+    }
+
+    .infoholder_overlay {
+      width: 100%;
+      background: @light_blue;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: none;
     }
   }
 
