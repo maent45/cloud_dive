@@ -3,7 +3,8 @@
         $Banner_caption
         <a href="#contact">
             <button>
-                CONTACT US
+                <span>CONTACT US</span>
+                <div class="btn_bground"></div>
             </button>
         </a>
     </div>

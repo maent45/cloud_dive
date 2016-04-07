@@ -56,4 +56,14 @@ $(document).ready(function () {
         });
     });
 
+    // button overlay toggle
+    $('button').on('mouseover', function () {
+        $(this).find('div.btn_bground').stop().slideDown(400);
+        $(this).find('span').css({'position':'relative','z-index':2});
+    });
+    $('button').on('mouseout', function () {
+        $(this).find('div.btn_bground').stop().slideUp(400);
+    });
+
+
 });

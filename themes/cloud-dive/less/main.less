@@ -47,6 +47,17 @@ button {
   border: 2px solid #E74C3C;
   background: transparent;
   margin: 15px 0px;
+  position: relative;
+
+  .btn_bground {
+    width: 100%;
+    background: @maroon;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+  }
 }
 
 // icons
@@ -68,6 +79,16 @@ span.glyphicon {
   form {
     background: @maroon;
     padding: 20px;
+
+    fieldset {
+      width: 75%;
+      margin: auto;
+    }
+
+    nav.Actions {
+      width: 56.5%;
+      margin: auto;
+    }
 
     label {
       margin: 15px 0px;

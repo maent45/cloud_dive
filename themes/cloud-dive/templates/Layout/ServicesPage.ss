@@ -4,7 +4,8 @@
         <p>$Blurb</p>
         <a href="contact-us">
             <button>
-                CONTACT US NOW
+                <span>CONTACT US NOW</span>
+                <div class="btn_bground"></div>
             </button>
         </a>
     </div>
