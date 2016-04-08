@@ -12,6 +12,13 @@
     <div class="img_filter"></div>
     <img src="$Banner.URL"/>
 </div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 arrow_down_wrapper">
+    <a href="#">
+        <span class="glyphicon glyphicon-chevron-down"></span>
+    </a>
+</div>
+
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <div class="container content">
         $Content

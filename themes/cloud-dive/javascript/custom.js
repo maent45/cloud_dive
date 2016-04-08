@@ -40,6 +40,12 @@ $(document).ready(function () {
             'bottom':'-10px'
         });
     });
+    // portfolio page
+    $('span.glyphicon-chevron-down').click(function() {
+        $('html, body').animate({
+            scrollTop: $($(this).closest('div').next()).offset().top
+        }, 1000);
+    });
 
     // services holder
     // toggle overlay
@@ -61,6 +67,5 @@ $(document).ready(function () {
     $('button').on('mouseout', function () {
         $(this).find('div.btn_bground').stop().slideUp();
     });
-
 
 });
