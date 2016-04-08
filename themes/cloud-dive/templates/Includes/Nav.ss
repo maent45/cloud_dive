@@ -8,7 +8,9 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="$BaseURL">CloudDive</a>
+            <a class="navbar-brand" href="$BaseURL">
+                <span class="glyphicon glyphicon-cloud" style="color: white;"></span>
+            </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->

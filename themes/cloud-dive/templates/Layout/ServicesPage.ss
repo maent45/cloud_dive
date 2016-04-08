@@ -1,7 +1,7 @@
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 banner_holder">
     <div class="container banner_content">
         <h1>$Title</h1>
-        <p>$Blurb</p>
+        <span class="hidden-xs">$Blurb</span>
         <a href="contact-us">
             <button>
                 <span>CONTACT US NOW</span>

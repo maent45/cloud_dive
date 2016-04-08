@@ -26,7 +26,7 @@ body {
 .banner_holder {
   position: relative;
   padding: 0px;
-  height: 450px;
+  //height: 450px;
   overflow: hidden;
 
   .banner_content {
@@ -62,7 +62,7 @@ body {
   img {
     width: 100%;
     position: absolute;
-    bottom: -200px;
+    //bottom: -200px;
   }
 }
 
@@ -92,11 +92,7 @@ footer {
 h1 {
   color: #E74C3C;
 }
-ul {
-  list-style-type: none;
-  padding: 0px;
-  margin: 0px;
-}
+
 button {
   padding: 10px 50px;
   border: 2px solid #E74C3C;
@@ -132,11 +128,11 @@ span.glyphicon {
     color: white;
   }
   span {
-    border: 1px solid @maroon;
+    border: 1px solid @light_blue;
     border-radius: 50%;
     padding: 12px;
     font-size: 30px;
-    background: @maroon;
+    background: @light_blue;
     position: relative;
   }
 }
@@ -215,4 +211,84 @@ span.glyphicon {
 
 .carousel.carousel-fade .carousel-control {
   z-index: 3;
+}
+
+// media queries
+@media screen and (min-width: 315px) {
+  .HomePage {
+    .banner_left {
+      padding: 20px;
+    }
+
+    .banner_right {
+      height: 175px;
+    }
+  }
+
+  .banner_holder {
+    height: 200px;
+
+    .banner_content {
+      width: 295px;
+      padding: 5px 20px;
+
+      h1,
+      h2 {
+        margin: 5px;
+      }
+    }
+    img {
+      bottom: 0px;
+    }
+  }
+
+}
+
+@media screen and (min-width: 480px) {
+  .HomePage {
+    .banner_right {
+      height: 250px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .HomePage {
+    .banner_left {
+      padding: 60px;
+    }
+    .banner_right {
+      height: 400px;
+    }
+  }
+
+  .banner_holder {
+    height: 400px;
+
+    .banner_content {
+      width: 395px;
+      padding: 5px 20px;
+
+      h1,
+      h2 {
+        margin: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .HomePage {
+    .banner_left {
+      padding: 100px;
+    }
+  }
+
+  .banner_holder {
+    height: 450px;
+
+    img {
+      bottom: 0px;
+    }
+  }
 }
