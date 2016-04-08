@@ -1,6 +1,11 @@
 $(document).ready(function () {
 
-    // homepage services
+    // homepage
+    //start carousel
+    $('.carousel').carousel({
+        interval: 7000
+    });
+    
     // toggle service_holder_overlay
     $('div.service_holder').each(function () {
 
@@ -23,6 +28,21 @@ $(document).ready(function () {
         });
 
     });
+    // homepage contact us slowscroll
+    $('.HomePage a.scroll_to_contact').on('click', function() {
+        $('html, body').animate({
+            scrollTop: $('.contact').offset().top
+        }, 1000);
+    });
+    // img slider
+
+    function showImages() {
+        var img = $('.banner_right img');
+
+
+    }
+
+    showImages();
 
     // portfolio holder
     $('div.portfolio_holder').on('mouseover', function() {
@@ -41,7 +61,7 @@ $(document).ready(function () {
         });
     });
     // portfolio page
-    $('span.glyphicon-chevron-down').click(function() {
+    $('span.glyphicon-chevron-down').on('click', function() {
         $('html, body').animate({
             scrollTop: $($(this).closest('div').next()).offset().top
         }, 1000);

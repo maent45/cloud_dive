@@ -29,7 +29,7 @@ class PortfolioPage extends Page {
         $fields->addFieldToTab('Root.Main', HtmlEditorField::create('Content'));
         $fields->addFieldToTab('Root.Main', HtmlEditorField::create('Tablet_desc', 'Development Summary')->setRows(5));
         $fields->addFieldToTab('Root.Main', $tablet_img = UploadField::create('Tablet_view', 'Tablet Image'));
-        $fields->addFieldToTab('Root.Main', $desktop_img = UploadField::create('Desktop_view', 'Tablet Image'));
+        $fields->addFieldToTab('Root.Main', $desktop_img = UploadField::create('Desktop_view', 'Desktop Image'));
         $fields->addFieldToTab('Root.Main', HtmlEditorField::create('Desktop_desc', 'Final Product Summary')->setRows(5));
         $fields->addFieldToTab('Root.Main', TextField::create('Website_url', 'Website URL'));
 
