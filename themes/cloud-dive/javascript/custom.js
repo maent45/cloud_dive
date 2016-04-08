@@ -3,46 +3,22 @@ $(document).ready(function () {
     // homepage
     //start carousel
     $('.carousel').carousel({
-        interval: 7000
+        interval: 5500
     });
-    
+
     // toggle service_holder_overlay
-    $('div.service_holder').each(function () {
-
-        var current_service_holder = $(this);
-        var overlay = $('div.service_holder_overlay');
-
-        $(current_service_holder).on('mouseover', function() {
-            $(overlay).each(function() {
-                if ($(this).attr('id') == current_service_holder.attr('id')) {
-                    $(this).stop().fadeIn();
-                }
-            });
-        });
-        $(current_service_holder).on('mouseout', function() {
-            $(overlay).each(function() {
-                if ($(this).attr('id') == current_service_holder.attr('id')) {
-                    $(this).stop().fadeOut();
-                }
-            });
-        });
-
+    $('div.service_holder').on('mouseover', function() {
+        $(this).find('div.service_holder_overlay').stop().fadeIn();
+    }).on('mouseleave', function() {
+        $(this).find('div.service_holder_overlay').stop().fadeOut();
     });
+
     // homepage contact us slowscroll
     $('.HomePage a.scroll_to_contact').on('click', function() {
         $('html, body').animate({
             scrollTop: $('.contact').offset().top
         }, 1000);
     });
-    // img slider
-
-    function showImages() {
-        var img = $('.banner_right img');
-
-
-    }
-
-    showImages();
 
     // portfolio holder
     $('div.portfolio_holder').on('mouseover', function() {
@@ -65,6 +41,14 @@ $(document).ready(function () {
         $('html, body').animate({
             scrollTop: $($(this).closest('div').next()).offset().top
         }, 1000);
+    }).on('mouseenter', function() {
+        $(this).stop().animate({
+            'top':'-15px'
+        });
+    }).on('mouseleave', function() {
+        $(this).stop().animate({
+            'top':'0px'
+        });
     });
 
     // services holder

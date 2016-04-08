@@ -1,5 +1,5 @@
-<div class="col-lg-12 banner">
-    <div class="col-lg-6 banner_left">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 banner">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 banner_left">
         $Banner_caption
         <a href="#" class="scroll_to_contact">
             <button>
@@ -9,7 +9,7 @@
         </a>
     </div>
 
-    <div class="col-lg-6 banner_right">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 banner_right">
         <div id="carousel_fade" class="carousel slide carousel-fade">
             <div class="carousel-inner">
                 <% if $Banners %>
