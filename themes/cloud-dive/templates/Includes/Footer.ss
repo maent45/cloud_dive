@@ -9,7 +9,7 @@
         <div class="col-lg-4">
             <h4>Our Services</h4>
             <ul>
-                <% loop $Menu(1) %>
+                <% loop $Services %>
                 <li>
                     <a href="$Link">
                         $Title

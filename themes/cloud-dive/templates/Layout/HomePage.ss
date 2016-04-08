@@ -57,13 +57,15 @@
 
 <!-- render contact form -->
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 contact" id="contact">
-    <% with $showForm %>
-        <div class="col-lg-6">
-            $Content
-        </div>
-        <div class="col-lg-6">
-            $Form
-        </div>
-    <% end_with %>
+    <% if $ShowForm %>
+        <% with $showForm %>
+            <div class="col-lg-6">
+                $Content
+            </div>
+            <div class="col-lg-6">
+                $Form
+            </div>
+        <% end_with %>
+    <% end_if %>
 </div>
 

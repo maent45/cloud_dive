@@ -7,6 +7,11 @@ class Page extends SiteTree {
 	private static $has_one = array(
 	);
 
+	// get ServicesHolder contents
+	public function Services() {
+		return ServicesHolder::get();
+	}
+
 }
 class Page_Controller extends ContentController {
 

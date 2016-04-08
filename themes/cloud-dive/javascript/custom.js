@@ -66,10 +66,10 @@ $(document).ready(function () {
     // button overlay toggle
     $('button').on('mouseover', function () {
         $(this).find('div.btn_bground').stop().slideDown();
-        $(this).find('span').css({'position':'relative','z-index':2,'color':'white'});
+        $(this).find('span').css({'position':'relative','z-index':2});
     }).on('mouseout', function () {
         $(this).find('div.btn_bground').stop().slideUp();
-        $(this).find('span').css({'color':'#3498DB'});
+        //$(this).find('span').css({'color':'#555'});
     });
 
 });
