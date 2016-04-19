@@ -15,7 +15,7 @@
                 <% if $Banners %>
                     <% loop $Banners %>
                         <div class="item <% if Pos() == 1 %>active<% end_if %>">
-                            <img src="$Image.URL" class="img-responsive">
+                            <%--<img src="$Image.URL" class="img-responsive">--%>
                         </div>
                     <% end_loop %>
                 <% end_if %>
