@@ -72,4 +72,22 @@ $(document).ready(function () {
         //$(this).find('span').css({'color':'#555'});
     });
 
+    // highlight search keyword
+    //function highlightSearchTerm() {
+    //    var search_term = $('div.search-bar input');
+    //    var search_list = $('ul.search_res');
+    //    var search_match = $("ul.search_res:contains('search_term.val())");
+    //    console.log('SEARCH TERM =',search_term.val());
+    //    console.log(search_list.text());
+    //
+    //    console.log(search_match);
+
+        //if ('search_list:contains(search_term.val())') {
+        //    alert('yes');
+        //} else {
+        //    alert('no');
+        //}
+    //}
+
+    //highlightSearchTerm();
 });

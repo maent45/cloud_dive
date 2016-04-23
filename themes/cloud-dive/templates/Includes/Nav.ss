@@ -22,10 +22,14 @@
                     <li class="$LinkingMode"><a href="$Link" title="$Title.XML">$MenuTitle.XML</a></li>
                 <% end_loop %>
             </ul>
+
+        </div>
+        <!--- search input --->
+        <div class="navbar-right">
             <% if $SearchForm %>
-                <span class="search-dropdown-icon"></span>
                 <div class="search-bar">
                     $SearchForm
+                    <span class="glyphicon glyphicon-search"></span>
                 </div>
             <% end_if %>
         </div>

@@ -219,6 +219,40 @@ span.glyphicon {
   z-index: 3;
 }
 
+// search results
+ul.search_res {
+  list-style-type: none;
+  margin: 25px 0 50px;
+  padding: 0px;
+
+  a {
+    text-decoration: none;
+  }
+}
+div.search-bar {
+  position: relative;
+  right: 30px;
+  
+  form {
+    display: inline-block;
+
+    input.text {
+      padding: 8px;
+      border: 0px;
+      border-radius: 5px;
+    }
+    input.action {
+      display: none;
+    }
+  }
+
+  span.glyphicon {
+    margin: 0px 0px 0px 5px;
+    font-size: 16px;
+    color: white;
+  }
+}
+
 // media queries
 @media screen and (min-width: 315px) {
   .HomePage {
