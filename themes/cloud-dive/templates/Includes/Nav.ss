@@ -22,6 +22,12 @@
                     <li class="$LinkingMode"><a href="$Link" title="$Title.XML">$MenuTitle.XML</a></li>
                 <% end_loop %>
             </ul>
+            <% if $SearchForm %>
+                <span class="search-dropdown-icon"></span>
+                <div class="search-bar">
+                    $SearchForm
+                </div>
+            <% end_if %>
         </div>
     </div>
 </nav>
