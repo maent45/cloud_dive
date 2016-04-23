@@ -152,7 +152,7 @@ span.glyphicon {
 
 .UserDefinedForm {
   // forms
-  form {
+  form#UserForm_Form {
     background: @maroon;
     padding: 20px;
     color: white;
@@ -232,7 +232,7 @@ ul.search_res {
 div.search-bar {
   position: relative;
   right: 30px;
-  
+
   form {
     display: inline-block;
 
@@ -240,6 +240,7 @@ div.search-bar {
       padding: 8px;
       border: 0px;
       border-radius: 5px;
+      display: none;
     }
     input.action {
       display: none;
@@ -250,6 +251,10 @@ div.search-bar {
     margin: 0px 0px 0px 5px;
     font-size: 16px;
     color: white;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
@@ -279,6 +284,13 @@ div.search-bar {
     }
     img {
       bottom: 0px;
+    }
+  }
+
+  div.search-bar {
+    span.glyphicon {
+      position: absolute;
+      right: -20px;
     }
   }
 
@@ -313,6 +325,13 @@ div.search-bar {
       h2 {
         margin: 10px;
       }
+    }
+  }
+
+  div.search-bar {
+    span.glyphicon {
+      position: relative;
+      right: 0px;
     }
   }
 }

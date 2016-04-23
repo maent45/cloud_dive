@@ -72,6 +72,13 @@ $(document).ready(function () {
         //$(this).find('span').css({'color':'#555'});
     });
 
+    // toggle search input
+    $('span.glyphicon-search').on('click', function() {
+        $('.search-bar input.text').fadeToggle();
+    });
+
+    $('.search-bar input.text').attr('value','').attr('placeholder','Enter keywords');
+
     // highlight search keyword
     //function highlightSearchTerm() {
     //    var search_term = $('div.search-bar input');
