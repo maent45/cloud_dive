@@ -73,8 +73,15 @@ $(document).ready(function () {
     });
 
     // toggle search input
-    $('span.glyphicon-search').on('click', function() {
-        $('.search-bar input.text').fadeToggle();
+    $('span.glyphicon-search').on('click', function(e) {
+        e.preventDefault();
+
+        var input_field = $('.search-bar input.text');
+        input_field.fadeToggle();
+
+        if (input_field.css('display','block')) {
+            $(input_field).focus();
+        }
     });
 
     $('.search-bar input.text').attr('value','').attr('placeholder','Enter keywords');
