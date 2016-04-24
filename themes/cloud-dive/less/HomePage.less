@@ -12,12 +12,6 @@
     -moz-box-shadow:    0px 6px 17px 0px rgba(50, 50, 50, 0.75);
     box-shadow:         0px 6px 17px 0px rgba(50, 50, 50, 0.75);
 
-    img {
-      width: 100%;
-      position: relative;
-      //display: none;
-    }
-
     &_left {
       padding: 100px;
 
@@ -33,6 +27,31 @@
       height: 400px;
       padding: 0px;
       margin: 40px 0px;
+      position: relative;
+
+      img.mobile {
+        width: 20%;
+        position: absolute;
+        z-index: 1;
+        top: 135px;
+      }
+      img.tablet {
+        width: 50%;
+        position: absolute;
+        right: -15px;
+        top: 105px;
+        z-index: 1;
+      }
+      img.desktop {
+        width: 65%;
+        position: absolute;
+        top: 0;
+        left: 60px;
+      }
+    }
+
+    .carousel-inner {
+      overflow: visible;
     }
 
   }
