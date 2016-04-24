@@ -84,24 +84,7 @@ $(document).ready(function () {
         }
     });
 
+    // temp placeholder
     $('.search-bar input.text').attr('value','').attr('placeholder','Enter keywords');
 
-    // highlight search keyword
-    //function highlightSearchTerm() {
-    //    var search_term = $('div.search-bar input');
-    //    var search_list = $('ul.search_res');
-    //    var search_match = $("ul.search_res:contains('search_term.val())");
-    //    console.log('SEARCH TERM =',search_term.val());
-    //    console.log(search_list.text());
-    //
-    //    console.log(search_match);
-
-        //if ('search_list:contains(search_term.val())') {
-        //    alert('yes');
-        //} else {
-        //    alert('no');
-        //}
-    //}
-
-    //highlightSearchTerm();
 });

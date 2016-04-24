@@ -4,8 +4,13 @@
 
   // banner
   .banner {
-    background: @light_blue;
+    background: #2c3e50; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #2c3e50 , #3498db); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #2c3e50 , #3498db); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: white;
+    -webkit-box-shadow: 0px 6px 17px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 6px 17px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 6px 17px 0px rgba(50, 50, 50, 0.75);
 
     img {
       width: 100%;
